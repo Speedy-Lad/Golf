@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --green: #4d9456;
+    --grey: #333333;
+}
+
+nav {
+    background-color: var(--green);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.33);
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.hero {
+    background-image: url(img/jacks.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero a {
+    background-color: var(--green);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 45px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.body p {
+    margin: 5% 0;
+    padding: 20px;
+    border: solid var(--grey) 3px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+.end {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--green);
+}
+
+.end .text {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
